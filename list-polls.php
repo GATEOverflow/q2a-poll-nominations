@@ -32,6 +32,7 @@ class list_polls
 		require_once QA_INCLUDE_DIR . 'db/selects.php';
         require_once QA_INCLUDE_DIR . 'qa-db.php';
 		$content = qa_content_prepare();
+		$content['description'] = 'Polls on GATE Overflow: vote and see what GATE CSE aspirants think about exams, preparation and resources.';
 		
 		if (qa_get('created') == '1') {
 			echo '<script>alert("Poll created successfully!");</script>';
